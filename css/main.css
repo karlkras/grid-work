@@ -1,4 +1,7 @@
 /* Put your code here */
 .grid {
     display: grid;
+
+    grid-template: 100px 100px
+    / 200px auto 150px;
 }
