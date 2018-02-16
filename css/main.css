@@ -2,8 +2,16 @@
 .grid {
     display: grid;
 
-    grid-template: 100px 100px
+    grid-template: [row1-start] 100px [row1-end row2-start] 100px [row2-end]
     / 200px auto 150px;
 
     grid-gap: 10px;
+}
+
+.grid div:nth-child(6) {
+    order: -1;
+}
+
+.grid div:nth-child(3) {
+    order: 1;
 }
