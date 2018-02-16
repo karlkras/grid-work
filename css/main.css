@@ -6,9 +6,13 @@
     / 200px auto 150px;
 }
 
+.grid div:nth-child(1) {
+    grid-row: auto / span 2;
+}
+
 .grid div:nth-child(2){
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 2;
 }
