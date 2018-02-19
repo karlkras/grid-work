@@ -3,36 +3,32 @@
     display: grid;
 
     grid-template: 100px 100px 100px
-    / 200px auto 150px;
+    / repeat(12, [small] 20px [large] 40px);
 
-    grid-template-areas:
-        "fith fith first"
-        "third second first"
-        "third sixth fourth"
 }
 
 .grid div:nth-child(1) {
-    grid-area: first;
+    grid-column: 1 / span 24;
 }
 
 .grid div:nth-child(2) {
-    grid-area: second;
+    grid-column: small 1 / large 3;
 }
 
 .grid div:nth-child(3) {
-    grid-area: third;
+    grid-column: auto / span 6;
 }
 
 .grid div:nth-child(4) {
-    grid-area: fourth;
+    grid-column: auto / span 6;
 }
 
 .grid div:nth-child(5) {
-    grid-area: fith;
+    grid-column: auto / span 12;
 }
 
 .grid div:nth-child(6) {
-    grid-area: sixth;
+    grid-column: auto / span 12;
 }
 
 
