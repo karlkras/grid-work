@@ -5,8 +5,10 @@
     grid-gap: 10px;
 
     grid-template: 100px 100px 100px
-    / repeat(auto-fit, 200px);
-    align-items: stretch;
+    / auto auto auto;
 
+    border: 1px solid #fff;
+
+    justify-content: space-between;
 }
 
