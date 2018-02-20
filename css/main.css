@@ -2,57 +2,12 @@
 .grid {
     display: grid;
 
-    grid-gap: 5px;
+    grid-gap: 3px;
 
-    grid-template: repeat(10, 40px)
-    / repeat(4,125px);
-
-    grid-template-areas:
-            "first first first first"
-            "second second third third"
-            "second second third third"
-            "fourth fourth fourth fourth"
-            "fourth fourth fourth fourth"
-            "fourth fourth fourth fourth"
-            "fourth fourth fourth fourth"
-            "fith fith fith sixth"
-            "fith fith fith sixth"
-            "seventh seventh seventh seventh"
-
+    grid-template: repeat(6, 20px)
+    / repeat(12,40px);
 }
 
-.grid div:nth-child(1) {
-    grid-area: first;
-    background-color: black;
+.grid div {
+    background-color: #c5c5c5;
 }
-
-.grid div:nth-child(2) {
-    grid-area: second;
-    background-color: #a9a9a9a8;
-}
-
-.grid div:nth-child(3) {
-    grid-area: third;
-    background-color: #7c8c8c;
-}
-
-.grid div:nth-child(4) {
-    grid-area: fourth;
-    background-color: #c5ccd2;
-}
-
-.grid div:nth-child(5) {
-    grid-area: fith;
-    background-color: #28393a;
-}
-
-.grid div:nth-child(6) {
-    grid-area: sixth;
-    background-color: #28393a;
-}
-
-.grid div:nth-child(7) {
-    grid-area: seventh;
-    background-color: black;
-}
-
