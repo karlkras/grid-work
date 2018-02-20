@@ -6,7 +6,7 @@
 
     grid-template: 100px 100px 100px
     / repeat(auto-fit, 200px);
-    justify-items: stretch;
+    align-items: stretch;
 
 }
 
