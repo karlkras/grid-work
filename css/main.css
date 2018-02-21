@@ -2,59 +2,21 @@
 .grid {
     display: grid;
 
-    grid-gap: 3px;
+    grid: 30px
+    / auto-flow 100px;
 
-    grid-template: repeat(2, 50px)
-    / repeat(3, 150px);
+    grid-gap: 5px;
 
-    /*border: 1px solid #060606;*/
+    /*grid-auto-rows: 100px;*/
+    /*grid-auto-columns: 150px;*/
+    /*grid-auto-flow: row dense;*/
 
-    /*height: 150px;*/
-
-    /*layout 1*/
-    /*align-content: end;*/
-    /*justify-content: center;*/
-
-    /*layout 2*/
-    /*align-content: center;*/
-    /*justify-content: space-between;*/
-
-    /*layout 3*/
-    /*align-items: center ;*/
-    /*justify-items: end;*/
 }
 
 .grid div {
-    background-color: #c5c5c5;
+    background-color: #3b8296;
     padding: 5px;
-    /*text-align: center;*/
-    /*vertical-align: middle;*/
-    /*line-height: 50px;*/
-}
+    color: white;
 
-.grid div:nth-child(1) {
-    align-self: center;
-    justify-self: center;
-}
-
-.grid div:nth-child(2) {
-    justify-self: end;
-}
-
-.grid div:nth-child(3) {
-    align-self: center;
-}
-
-.grid div:nth-child(4) {
-    align-self: start;
-    justify-self: end;
-}
-
-.grid div:nth-child(5) {
-    align-self: end;
-    justify-self: center;
-}
-
-.grid div:nth-child(6) {
-    justify-self: center;
+    text-align: center;
 }
