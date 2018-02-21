@@ -7,9 +7,9 @@
     grid-template: repeat(2, 50px)
     / repeat(3, 150px);
 
-    border: 1px solid #060606;
+    /*border: 1px solid #060606;*/
 
-    height: 150px;
+    /*height: 150px;*/
 
     /*layout 1*/
     /*align-content: end;*/
@@ -20,13 +20,41 @@
     /*justify-content: space-between;*/
 
     /*layout 3*/
-    align-items: center ;
-    justify-items: end;
+    /*align-items: center ;*/
+    /*justify-items: end;*/
 }
 
 .grid div {
     background-color: #c5c5c5;
+    padding: 5px;
     /*text-align: center;*/
     /*vertical-align: middle;*/
     /*line-height: 50px;*/
+}
+
+.grid div:nth-child(1) {
+    align-self: center;
+    justify-self: center;
+}
+
+.grid div:nth-child(2) {
+    justify-self: end;
+}
+
+.grid div:nth-child(3) {
+    align-self: center;
+}
+
+.grid div:nth-child(4) {
+    align-self: start;
+    justify-self: end;
+}
+
+.grid div:nth-child(5) {
+    align-self: end;
+    justify-self: center;
+}
+
+.grid div:nth-child(6) {
+    justify-self: center;
 }
