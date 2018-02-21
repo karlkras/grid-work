@@ -1,11 +1,27 @@
 /* Put your code here */
 .grid {
     display: grid;
-    grid: auto-flow 200px / repeat(3, 200px);
+    grid: repeat(5, 100px) / repeat(5, 100px);
     grid-gap: 10px;
 }
 
-img {
-    height: 200px;
-    width: 200px;
+.tp {
+    background-color: rgba(150, 0, 0, 0.7);
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+    z-index: 1;
 }
+
+.md {
+    background-color: rgba(0, 150, 0, 0.7);
+    grid-row: 3 / span 3;
+    grid-column: 3 / span 3;
+}
+
+.bt {
+    background-color: rgba(0, 0, 150, 0.7);
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 3;
+}
+
+
