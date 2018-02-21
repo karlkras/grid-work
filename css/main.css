@@ -1,45 +1,32 @@
 /* Put your code here */
 .grid {
     display: grid;
-    grid: repeat(3, 150px) / repeat(4, 1fr);
+    grid: repeat(2, 240px) / repeat(2, 320px);
     grid-gap: 10px;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+}
+
 .item {
-    background-color: gainsboro;
-    padding: 10px;
+    position: relative;
 }
 
-.sub {
-    background-color: darkgrey;
+.abs {
+    position: absolute;
 }
 
-.subgrid-4 {
-    display: grid;
-
-    grid: 50% 50%
-    / 50% 50%;
-
-    grid-gap: 5px;
-
+.tl {
+    top: 0;
+    left: 0;
 }
 
-.subgrid-2-hz {
-     display: grid;
-
-     grid: 1fr
-    / 50% 50%;
-
-     grid-gap: 5px;
-
-}
-
-.subgrid-2-vert {
-    display: grid;
-
-    grid: 50% 50%
-    / 1fr;
-
-    grid-gap: 5px;
-
+.status-box {
+    padding: 5px 15px;
+    color: gainsboro;
+    font-size: small;
+    z-index: 1;
+    background-color: rgba(27, 22, 7, 0.34);
 }
